@@ -6,8 +6,18 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Comfortaa', cursive;
+    color: skyblue;
 }
 
+.top-header h1 {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px 10px;
+}
+
+.top-header div {
+    background-color: navy;
+}
 .start-btn {
     position: absolute;
     top: 50%;
@@ -25,4 +35,89 @@
     border-radius: 5px;
     background: white;
     cursor: pointer;
+}
+
+/* Quiz Box styling */
+.quiz-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    background: navy;
+    border-radius: 5px;
+}
+
+.quiz-box header {
+    position: relative;
+    z-index: 999;
+    height: 70px;
+    padding: 0 30px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 5px 5px 1px rgba(0,0,0,0,2);
+}
+
+.quiz-box header .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.quiz-box header .timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+    height: 45px;
+    background: navy;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0 8px;
+}
+
+.quiz-box header .timer .time-text {
+    font-weight: 400;
+    font-size: 17px;
+    text-align: center;
+}
+
+.quiz-box header .timer .timer-sec {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.quiz-box section {
+    padding: 25px 30px 20px 30px;
+    background: navy;
+}
+
+.quiz-box section .que-text {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.quiz-box section .option-list {
+    padding: 20px 0;
+    display: block;
+}
+
+section .option-list .option {
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+section .option-list .option:hover {
+    background-color: #0066ff;
+    box-shadow: rgba(0,0,0,0,0.3);
 }
