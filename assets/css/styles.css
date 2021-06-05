@@ -1,0 +1,28 @@
+/* Importing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+.start-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* start button styling */
+.start-btn button{
+    font-size: 25px;
+    font-weight: 500;
+    color: skyblue;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+}
