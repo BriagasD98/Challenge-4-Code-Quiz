@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <script src="assets/js/script.js"></script>
+    <script defer src="assets/js/script.js"></script>
 </head>
 <body>
     <header class="top-header">
@@ -16,39 +16,30 @@
     </header>
 
     <!-- Start Quiz Button -->
-    <div class="start-btn">
-        <button>Start Quiz</button>
+    <div id="start-btn" class="start-btn btn">
+        <button id="start-btn" class="start-btn btn">Start Quiz</button>
     </div>
 
     <!-- Quiz Box -->
-    <div class="quiz-box">
-        <header>
-            <div class="title">Code Quiz</div>
-            <div class="timer">
-                <div class="time-text">Time Left</div>
-                <div class="timer-sec">15</div>
+    <div class="container hide">
+        <div id="question-container">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
             </div>
-        </header>
-        <section>
-            <div class="que-text">
-                <span>Inside which HTML element do we put the JavaScript?</span>
-            </div>
-            <div class="option-list">
-                <div class="option">
-                    <span>&lt;javascript&gt;</span>
-                </div>
-                <div class="option">
-                    <span>&lt;js&gt;</span>
-                </div>
-                <div class="option">
-                    <span>&lt;espresso&gt;</span>
-                </div>
-                <div class="option">
-                    <span>&lt;script&gt;</span>
-                </div>
-            </div>
-        </section>
+        </div>
+        <div class="controls">
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
     </div>
     
+    <!-- <footer> 
+        <div>
+            <h2>🧠Designed & Built by David Briagas.</h1>
+        </div>
+    </footer> -->
 </body>
 </html>
