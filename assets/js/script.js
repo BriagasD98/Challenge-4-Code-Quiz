@@ -34,6 +34,7 @@ function countDown() {
 
 startButton.addEventListener('click', countDown)
 
+
 let shuffledQuestions, currentQuestionsIndex
 
 startButton.addEventListener('click', startGame)
