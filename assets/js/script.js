@@ -6,6 +6,34 @@ const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 const questionContainer = document.querySelector('.container')
 
+const scoreText = document.querySelector('#score')
+let score = 0
+const scorePoints = 100
+
+function scoreIncrement() {
+    let classToApply = selectedAnswer == currentQuestionsIndex.answer ? 'correct' : 'incorrect'
+
+    if (classToApply === 'correct') {
+        scoreIncrement(scorePoints)
+    }
+}
+
+
+const timeLeftDisplay = document.querySelector("#time-left")
+timeLeft = 60
+
+function countDown() {
+    setInterval(function(){
+       if (timeLeft <= 0 ) {
+           clearInterval(timeLeft = 0)
+       }
+       timeLeftDisplay.innerHTML = timeLeft
+        timeLeft -=1
+    }, 1000)
+}
+
+startButton.addEventListener('click', countDown)
+
 let shuffledQuestions, currentQuestionsIndex
 
 startButton.addEventListener('click', startGame)

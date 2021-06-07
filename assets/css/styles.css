@@ -19,10 +19,18 @@
     background-color: navy;
 }
 
+/* timer style */
+.timer {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
 /* start button styling */
 .start-btn {
     position: absolute;
-    top: 50%;
+    top: 22%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -51,6 +59,7 @@
     position: relative;
     margin: 60px auto;
     font-size: 1.5rem;
+    z-index: 999;
 }
 
 .btn-grid {
@@ -100,11 +109,16 @@
     align-items: center;
 }
 
+.score {
+    display: flex;
+    justify-content: space-around;
+}
+
 .hide {
     display: none;
 }
 
-/* footer h2 {
+/*footer h2 {
     font-size: 30px;
     font-weight: 600;
     padding: 10px 10px;
@@ -116,4 +130,3 @@ footer div {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-*/
